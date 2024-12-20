@@ -41,6 +41,9 @@
 ### [Data, privacy and security](https://learn.microsoft.com/en-us/legal/cognitive-services/agents/data-privacy-security?context=/azure/ai-services/agents/context/context)
 
 ## Reference
+### Frameworks
+#### [AutoGen](https://microsoft.github.io/autogen/0.4.0.dev11/)
+#### [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
 ### SDK
 ### Azure SDK
 ##### [Python](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?context=/azure/ai-services/agents/context/context)
