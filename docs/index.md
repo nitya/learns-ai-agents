@@ -1,4 +1,16 @@
-# Agentic AI Apps on Azure
+# Agentic AI & Azure
+
+## Learning Objectives
+
+By the end of my learning journey, I want to be able to:
+
+- Describe what AI Agents are - with examples.
+- Create a new AI Agent - using different technologies.
+- Validate my AI Agent - using different tools & SDKs.
+- Orchestrate multi-agent workflows - for a target scenario.
+- Ideate, Evaluate, and Operationalize - an agentic AI solution on Azure.
+
+The starting point for my journey will be technologies that are built-in or supported by the Azure AI Foundry platform. However, the goal is to continue expanding to explore open-source and third-party frameworks for agentic AI, to see how I can mix-and-match tools and capabilities to achieve optimal outcomes. **Let's start with definitions**.
 
 ## What is an AI Agent?
 
@@ -23,9 +35,28 @@ It has the following features:
 - Flexible Model Selection
 - Uses same wire protocol as [Azure OpenAI Assistants](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant)
 
+**Quickstart:** Create a new agent
+
+- [Azure SDK](https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-python-azure) (Python)
+- [OpenAI SDK](https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-python-openai) (Python)
+
+
 ---
 
-## Markmaps
+## What is AutoGen?
+
+
+[By definition](https://github.com/microsoft/autogen), AutoGen is an open-source framework for building AI agent systems. It simplifies the creation of event-driven, distributed, scalable, and resilient agentic applications. It allows you to quickly build systems where AI agents collaborate and perform tasks autonomously or with human oversight.
+
+In Oct 2024, the team released [AutoGen 0.4](https://microsoft.github.io/autogen/dev) a from-the-ground-up rewrite in response to developer and community feedback. This version _embraces the actor model of computing to support distributed, highly scalable, event-driven agentic systems_ - with features like composability, flexibility, debugging & observability, and scalability. The project also moved away from a single monolithic library, to 
+
+---
+
+## What is Semantic Kernel?
+
+---
+
+## Where can I learn more?
 
 [Markmaps](https://markmap.js.org/) are a great way to get the big picture of the documentation set for any technology. Check out the markmaps for the [Azure AI Agent Service](https://learn.microsoft.com/azure/ai-services/agents/), [Semantic Kernel](https://learn.microsoft.com/semantic-kernel/overview/) and [AutoGen](https://microsoft.github.io/autogen/0.4.0.dev11/index.html) below - and check back regularly for updates. **Tip**: You can click any node (circle) to collapse/expand the subtree for clarity.
 

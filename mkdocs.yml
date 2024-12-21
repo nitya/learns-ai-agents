@@ -17,7 +17,7 @@
 # ---------------------------------
 
 # Project information .........................................
-site_name: "Azure AI ❤️ Agents"
+site_name: "Nitya Learns: Azure AI Agents"
 site_url: https://nitya.github.io/learns-azure-ai-agents
 site_author: Nitya Narasimhan, PhD
 site_description: >-
@@ -37,7 +37,7 @@ theme:
   font:
     code: Roboto Mono  #Monospaced
     text: Roboto       #Regular
-  logo: img/logo.svg
+  logo: img/nitya.png
   language: en
 
   # Theme Modes ...............................................
