@@ -1,0 +1,13 @@
+# Documentation
+mkdocs-material
+mkdocs-markmap
+
+# Python Utilities
+pandas
+python-dotenv
+
+
+# Azure AI Agent Service
+
+# Application Framework
+
