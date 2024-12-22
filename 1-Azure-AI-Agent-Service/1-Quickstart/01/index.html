@@ -938,17 +938,32 @@
 </ul>
 <hr/>
 <h2 id="3-learning-environment">3. Learning Environment<a class="headerlink" href="#3-learning-environment" title="Permanent link">¶</a></h2>
-<p>Thsi repository is set up with a <a href="https://containers.dev">dev container</a> that contains all the necessary tools and library dependencies required for doing the hands-on exercises - including extensions for the Visual Studio Code IDE (my preferred development environment).</p>
-<p>To get started with this pick one of these options:</p>
+<p>This repository is set up with a <a href="https://containers.dev">dev container</a> that contains all the necessary tools and library dependencies required for doing the hands-on exercises - including extensions for the Visual Studio Code IDE (my preferred development environment).</p>
+<p>To get started with this <strong>pick one option</strong> below. I recommend GitHub Codespaces. It's easier to get started with, and reproducible across teams for debugging - but requires networking connectivity and codespaces quota.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="cloud-github-codespaces" name="__tabbed_1" type="radio"/><input id="local-docker-desktop" name="__tabbed_1" type="radio"/><div class="tabbed-labels"><label for="cloud-github-codespaces">CLOUD (GitHub Codespaces)</label><label for="local-docker-desktop">LOCAL (Docker Desktop)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ol>
-<li>
-<p>Launch the repository using GitHub Codespaces. This sets up a development container in the cloud with a Visual Studio Code editor in the browser.</p>
-</li>
-<li>
-<p>Clone the repository to your local device and launch using Docker Desktop. This sets up a development container and uses the Visual Studio Code editor in your local environment.</p>
-</li>
+<li>Fork the repo to your profile.</li>
+<li>Open the fork in your browser - click the <code>Code</code> tab.</li>
+<li>Create a new Codespaces on main.</li>
 </ol>
-<p><strong>The first option is simpler, but requires available GitHub Codespaces quota and a network connection</strong>. You can switch between options anytime - just save code changes to the repo.</p>
+<p><strong>This sets up a development container in the cloud with a Visual Studio Code editor in the browser.</strong></p>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Fork the repo to your profile.</li>
+<li>Clone the forked repo to your local device.</li>
+<li>Install Docker Desktop on device, and launch it.</li>
+<li>Install Visual Studio Code on device, and launch it.</li>
+<li>Install the Dev Container extension on Visual Studio Code.</li>
+<li>Open the cloned repo in Visual Studio Code.</li>
+<li>You will be prompted to "Reopen in container" - confirm it.</li>
+</ol>
+<p><strong>This launches a Visual Studio Code instance on local device, with your code, connected to a dev container in Docker Desktop.</strong></p>
+</div>
+</div>
+</div>
 <hr/>
 <h2 id="4-learning-resources">4. Learning Resources<a class="headerlink" href="#4-learning-resources" title="Permanent link">¶</a></h2>
 <ol>

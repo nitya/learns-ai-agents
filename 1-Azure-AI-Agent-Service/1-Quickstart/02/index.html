@@ -1060,9 +1060,9 @@
 <p>The <strong>Azure AI Agent Service</strong> is a fully managed service designed to empower developers to securely build, deploy, and scale high-quality, and extensible AI agents without needing to manage the underlying compute and storage resources. </p>
 <p>An <strong>AI Agent</strong> acts as a "smart" microservice that can be used to answer questions (RAG), perform actions, or completely automate workflows - by combining the power of generative AI models with tools that allow it to access and interact with real-world data sources.</p>
 <h2 id="12-agent-creation">1.2 Agent Creation<a class="headerlink" href="#12-agent-creation" title="Permanent link">¶</a></h2>
-<p>The Azure AI Agent service uses the same wire protocol as Azure OpenAI Assistants allowing you to use either OpenAI SDKs or Azure AI Foundry SDK for building agents. </p>
+<p>The Azure AI Agent service uses the same wire protocol as Azure OpenAI Assistants allowing you to use either OpenAI SDKs or Azure AI Foundry SDK for building agents. Getting started with a simple agent is a 3-step process.</p>
 <h3 id="121-create-agent">1.2.1 Create Agent<a class="headerlink" href="#121-create-agent" title="Permanent link">¶</a></h3>
-<p>To create an agent, you need to specify:</p>
+<p>First, create the agent by specifying:</p>
 <ul>
 <li>the model - it uses to execute tasks</li>
 <li>the instructions - on how it should complete tasks</li>
@@ -1087,7 +1087,7 @@
 <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="122-create-activity-thread">1.2.2 Create Activity Thread<a class="headerlink" href="#122-create-activity-thread" title="Permanent link">¶</a></h3>
-<p>To "run" an agent, we need an execution thread that is initialized with a message for that agent, typically consisting of a user request. Here's an example of what that looks like:</p>
+<p>Next, create an activity thread for the agent to run in. Then create the first message on that thread with the user request (<em>role: "user"</em>) as the task for the agent to complete. <strong>This effectively adds the first message into the thread messages queue</strong>.</p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">1 | Create Activity Thread</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1103,7 +1103,8 @@
 <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="123-run-agent-in-thread">1.2.3 Run Agent in Thread<a class="headerlink" href="#123-run-agent-in-thread" title="Permanent link">¶</a></h3>
-<p>To execute an agent, simply start a run with the created thread and agent as shown below. This runs the model (with instructions), invokes tools (as agent calls them) and returns final response (for user dispay). The messages now represent the <em>conversation</em> between user and one or more agents, in the completion of the given task.</p>
+<p>Finally, create an execution run instance with the thread and agent instances from above. <strong>Note that the agent simply retrieves the first message in the thread, to understand its task</strong>.</p>
+<p>The agent will continue to update the thread message queue with new messages that reflect the ongoing <em>conversation</em> between the user, the agent, and other tools. </p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">1 | Run Agent In Thread</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
