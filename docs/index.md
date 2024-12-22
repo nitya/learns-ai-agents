@@ -1,16 +1,19 @@
-# Agentic AI & Azure
-
+# Welcome
 ## Learning Objectives
 
-By the end of my learning journey, I want to be able to:
+By the end of this learning journey, I want to be able to:
 
-- Describe what AI Agents are - with examples.
-- Create a new AI Agent - using different technologies.
-- Validate my AI Agent - using different tools & SDKs.
-- Orchestrate multi-agent workflows - for a target scenario.
-- Ideate, Evaluate, and Operationalize - an agentic AI solution on Azure.
+- **Describe** what AI Agents are - with examples.
+- **Create** a new AI Agent - using different technologies.
+- **Validate** my AI Agent - using different tools & SDKs.
+- **Orchestrate** multi-agent workflows - for a target scenario.
+- **Operationalize** workflows end-to-end - ideate, evaluate, deploy.
 
-The starting point for my journey will be technologies that are built-in or supported by the Azure AI Foundry platform. However, the goal is to continue expanding to explore open-source and third-party frameworks for agentic AI, to see how I can mix-and-match tools and capabilities to achieve optimal outcomes. **Let's start with definitions**.
+The starting point for my journey will be technologies that are built-in or supported by the Azure AI Foundry platform. The goal is to then expand to open-source and third-party frameworks for agentic AI, and to mix-and-match tools and capabilities to achieve optimal outcomes. 
+
+**Let's start with definitions**.
+
+---
 
 ## What is an AI Agent?
 
@@ -48,11 +51,60 @@ It has the following features:
 
 [By definition](https://github.com/microsoft/autogen), AutoGen is an open-source framework for building AI agent systems. It simplifies the creation of event-driven, distributed, scalable, and resilient agentic applications. It allows you to quickly build systems where AI agents collaborate and perform tasks autonomously or with human oversight.
 
-In Oct 2024, the team released [AutoGen 0.4](https://microsoft.github.io/autogen/dev) a from-the-ground-up rewrite in response to developer and community feedback. This version _embraces the actor model of computing to support distributed, highly scalable, event-driven agentic systems_ - with features like composability, flexibility, debugging & observability, and scalability. The project also moved away from a single monolithic library, to 
+In Oct 2024, the team released [AutoGen 0.4](https://microsoft.github.io/autogen/dev) a from-the-ground-up rewrite in response to developer and community feedback. This version _embraces the actor model of computing to support distributed, highly scalable, event-driven agentic systems_ - with features like composability, flexibility, debugging & observability, and scalability. The project also moved away from a single monolithic library, to a [multi-library solution](https://microsoft.github.io/autogen/0.2/blog/) with three packages:
+
+- **Core** - the building blocks for agentic AI
+- **AgentChat** - a task-driven high-level API with group chat, code exection, prebuilt agents
+- **Extensions** - core interfaces and third-party integrations for expansion.
+
+**Quickstart:** Create a new agentic app
+
+- [AgentChat](https://microsoft.github.io/autogen/0.4.0.dev11/user-guide/agentchat-user-guide/quickstart.html) - build apps with preset agents.
+- [Core](https://microsoft.github.io/autogen/0.4.0.dev11/user-guide/core-user-guide/quickstart.html) - understand basic building blocks
 
 ---
 
 ## What is Semantic Kernel?
+
+Semantic Kernel is a lightweight, open-source development kit that lets you easily build AI agents and integrate the latest AI models into your C#, Python, or Java codebase. It serves as an efficient middleware that enables rapid delivery of enterprise-grade solutions.
+
+**Quickstart:** Create a new agentic app
+- [With Python](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-python)
+- [with C#](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-csharp)
+- [with Java](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-java)
+
+
+### Agent Framework
+
+An AI agent is a software entity designed to perform tasks autonomously or semi-autonomously by recieving input, processing information, and taking actions to achieve specific goals. Agents can send and receive messages, generating responses using a combination of models, tools, human inputs, or other customizable components.
+
+The [Semantic Kernel Agent Framework](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/?pivots=programming-language-csharp) provides a platform within the Semantic Kernel eco-system that allow for the creation of AI agents and the ability to incorporate agentic patterns into any application based on the same patterns and features that exist in the core Semantic Kernel framework.
+
+
+### Process Framework
+A Process is a structured sequence of activities or tasks that deliver a service or product, adding value in alignment with specific business goals for customers.
+
+The [Semantic Kernel Process Framework](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/process/process-framework) is a cutting-edge approach designed to optimize AI integration with your business processes. This framework empowers developers to efficiently create, manage, and deploy business processes while leveraging the powerful capabilities of AI, alongside your existing code and systems.
+
+---
+
+## What are the alterntives?
+
+
+### Articles
+- [Top 5 Frameworks for Building AI Agents in 2025](https://www.analyticsvidhya.com/blog/2024/07/ai-agent-frameworks/) 
+- [Top 3 Trending Agentic AI Frameworks](https://www.datagrom.com/data-science-machine-learning-ai-blog/langgraph-vs-autogen-vs-crewai-comparison-agentic-ai-frameworks)
+- [Gartner Top 10 Strategic Technology Trends for 2025](https://www.gartner.com/en/articles/top-technology-trends-2025)
+- [McKinsey: Why agents are the next frontier of generative AI](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/why-agents-are-the-next-frontier-of-generative-ai)
+- [The Next “Next Big Thing”: Agentic AI’s Opportunities and Risks](https://scet.berkeley.edu/the-next-next-big-thing-agentic-ais-opportunities-and-risks/) - UC Berkeley
+
+### Frameworks
+
+1. Microsoft AutoGen - [AgentChat](https://microsoft.github.io/autogen/0.4.0.dev11/user-guide/agentchat-user-guide/quickstart.html)
+1. LangGraph - [Quickstart](https://langchain-ai.github.io/langgraph/tutorials/introduction/)
+1. CrewAI - [Quickstart](https://docs.crewai.com/quickstart)
+1. Semantic Kernel - [Quickstart](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-python)
+1. LangChain - [Build an Agent](https://python.langchain.com/docs/tutorials/agents/#installation)
 
 ---
 
