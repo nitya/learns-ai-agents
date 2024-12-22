@@ -1011,18 +1011,14 @@
 <h2 id="3-the-azure-ai-agent-service">3. The Azure AI Agent Service<a class="headerlink" href="#3-the-azure-ai-agent-service" title="Permanent link">¶</a></h2>
 <p><a href="https://learn.microsoft.com/en-us/azure/ai-services/agents/overview">By definition</a>, it is a <strong>fully-managed service designed to empower developers to securely build, deploy, and scale high-quality, and extensible AI agents</strong>. Leveraging an extensive ecosystem of models, tools and capabilities from OpenAI, Microsoft, and third-party providers, Azure AI Agent Service enables building agents for a wide range of generative AI use cases. <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling">Client-side function calling</a> which was previously complex to implement - is now just a few lines of code.</p>
 <p>It has the following features:</p>
-<ul>
-<li>Enterprise-grade security</li>
-<li>Rapid development &amp; automation</li>
-<li>Extensive data connections</li>
-<li>Flexible Model Selection</li>
-<li>Uses same wire protocol as <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant">Azure OpenAI Assistants</a></li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Enterprise-grade security</li>
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Rapid development &amp; automation</li>
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Extensive data connections</li>
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Flexible Model Selection</li>
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Uses same wire protocol as <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant">Azure OpenAI Assistants</a></li>
 </ul>
-<p><strong>Quickstart:</strong> Create a new agent</p>
-<ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-python-azure">Azure SDK</a> (Python)</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-python-openai">OpenAI SDK</a> (Python)</li>
-</ul>
+<p><strong>Quickstart:</strong> Create a new agent with the <a href="https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-python-azure">Azure SDK</a> or the <a href="https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-python-openai">OpenAI SDK</a>.</p>
 <hr/>
 <h2 id="4the-autogen-framework">4.The AutoGen Framework<a class="headerlink" href="#4the-autogen-framework" title="Permanent link">¶</a></h2>
 <p><a href="https://github.com/microsoft/autogen">By definition</a>, AutoGen is an open-source framework for building AI agent systems. It simplifies the creation of event-driven, distributed, scalable, and resilient agentic applications. It allows you to quickly build systems where AI agents collaborate and perform tasks autonomously or with human oversight.</p>
@@ -1032,18 +1028,11 @@
 <li><strong>AgentChat</strong> - a task-driven high-level API with group chat, code exection, prebuilt agents</li>
 <li><strong>Extensions</strong> - core interfaces and third-party integrations for expansion.</li>
 </ul>
-<p><strong>Quickstart:</strong> Create a new agentic app</p>
-<ul>
-<li><a href="https://microsoft.github.io/autogen/0.4.0.dev11/user-guide/agentchat-user-guide/quickstart.html">AgentChat</a> - build apps with preset agents.</li>
-<li><a href="https://microsoft.github.io/autogen/0.4.0.dev11/user-guide/core-user-guide/quickstart.html">Core</a> - understand basic building blocks</li>
-</ul>
+<p><strong>Quickstart:</strong> Create a new <a href="https://microsoft.github.io/autogen/0.4.0.dev11/user-guide/agentchat-user-guide/quickstart.html">AgentChat</a> app or explore <a href="https://microsoft.github.io/autogen/0.4.0.dev11/user-guide/core-user-guide/quickstart.html">Core</a> building blocks.</p>
 <hr/>
 <h2 id="5-the-semantic-kernel-project">5. The Semantic Kernel Project<a class="headerlink" href="#5-the-semantic-kernel-project" title="Permanent link">¶</a></h2>
 <p>Semantic Kernel is a lightweight, open-source development kit that lets you easily build AI agents and integrate the latest AI models into your C#, Python, or Java codebase. It serves as an efficient middleware that enables rapid delivery of enterprise-grade solutions.</p>
-<p><strong>Quickstart:</strong> Create a new agentic app
-- <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-python">With Python</a>
-- <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-csharp">with C#</a>
-- <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-java">with Java</a></p>
+<p><strong>Quickstart:</strong> Create a new agentic app with [Python](https://learn.microsoft.com/en-us/semantic-kernel/get-started/, <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-csharp">C#</a> or <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-java">Java</a>.</p>
 <h3 id="51-the-agent-framework">5.1 The Agent Framework<a class="headerlink" href="#51-the-agent-framework" title="Permanent link">¶</a></h3>
 <p>An AI agent is a software entity designed to perform tasks autonomously or semi-autonomously by recieving input, processing information, and taking actions to achieve specific goals. Agents can send and receive messages, generating responses using a combination of models, tools, human inputs, or other customizable components.</p>
 <p>The <a href="https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/?pivots=programming-language-csharp">Semantic Kernel Agent Framework</a> provides a platform within the Semantic Kernel eco-system that allow for the creation of AI agents and the ability to incorporate agentic patterns into any application based on the same patterns and features that exist in the core Semantic Kernel framework.</p>
