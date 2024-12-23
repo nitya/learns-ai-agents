@@ -1,6 +1,8 @@
 # About Me
 
-Welcome to my world! **My name is Nitya Narasimhan and I am a PhD, a Polyglot, and a Parent.** I've worked in tech for nearly three decades in roles spanning research, engineering, and advocacy. I've also been a community leader in the Greater New York region for over a decade, organizing meetups and conferences that have skilled thousands of developers. As a parent and educator, I'm becoming increasingly invested in **helping people learn AI** in a way that makes complex topics feel more relatable to their lives, and in providing them with hands-on learning resources that help translate awareness into action.
+Welcome to my world! **My name is Nitya Narasimhan and I am a PhD, a Polyglot, and a Parent.** I've worked in tech for nearly three decades in roles spanning research, engineering, and advocacy. I've also been a community leader in the Greater New York region for over a decade, organizing meetups and conferences that have skilled thousands of developers. 
+
+As a parent and educator, I'm becoming increasingly invested in **helping people learn AI** in a way that makes complex topics feel more relatable to their lives, and in providing them with hands-on learning resources that help translate awareness into action.
 
 My day job as an AI advocate at Microsoft is focused on the Azure AI platform. But my personal interests span a variety of topics from open-source tooling to visual storytelling and creative content projects that put the _fun_ in fundamentals. 
 
