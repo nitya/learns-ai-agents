@@ -514,7 +514,7 @@
         
   
   <span class="md-ellipsis">
-    1.2 Some Fundamentals
+    1.2 AI Fundamentals
   </span>
   
 
@@ -984,36 +984,48 @@
 
 <h1 id="13-ai-project-setup">1.3 AI Project Setup<a class="headerlink" href="#13-ai-project-setup" title="Permanent link">¶</a></h1>
 <p>Before we jump into the details of project setup, it helps to get a sense of the Azure AI Foundry architecture, and how it relates to our current quickstart workflow. <strong>The figure provides the big picture - click on tabs below to get brief explainers on the core components shown</strong>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:7"><input checked="checked" id="azure-ai-foundry" name="__tabbed_1" type="radio"/><input id="azure-ai-hub" name="__tabbed_1" type="radio"/><input id="azure-ai-project" name="__tabbed_1" type="radio"/><input id="azure-ai-services" name="__tabbed_1" type="radio"/><input id="azure-open-ai" name="__tabbed_1" type="radio"/><input id="connections" name="__tabbed_1" type="radio"/><input id="management-center" name="__tabbed_1" type="radio"/><div class="tabbed-labels"><label for="azure-ai-foundry">Azure AI Foundry</label><label for="azure-ai-hub">Azure AI Hub</label><label for="azure-ai-project">Azure AI Project</label><label for="azure-ai-services">Azure AI Services</label><label for="azure-open-ai">Azure Open AI</label><label for="connections">Connections</label><label for="management-center">Management Center</label></div>
+<p><img alt="Azure AI Foundry Architecture" src="https://learn.microsoft.com/en-us/azure/ai-studio/media/concepts/ai-studio-architecture.png"/></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:7"><input checked="checked" id="azure-ai-foundry" name="__tabbed_1" type="radio"/><input id="azure-ai-hub" name="__tabbed_1" type="radio"/><input id="azure-ai-project" name="__tabbed_1" type="radio"/><input id="azure-ai-services" name="__tabbed_1" type="radio"/><input id="azure-open-ai-service" name="__tabbed_1" type="radio"/><input id="connections" name="__tabbed_1" type="radio"/><input id="management-center" name="__tabbed_1" type="radio"/><div class="tabbed-labels"><label for="azure-ai-foundry">Azure AI Foundry</label><label for="azure-ai-hub">Azure AI Hub</label><label for="azure-ai-project">Azure AI Project</label><label for="azure-ai-services">Azure AI Services</label><label for="azure-open-ai-service">Azure Open AI Service</label><label for="connections">Connections</label><label for="management-center">Management Center</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Explain it.</p>
+<p><a href="https://learn.microsoft.com/azure/ai-studio/concepts/architecture">Azure AI Foundry</a> in an enterprise-grade unified platform for building generative AI applications end-to-end on Azure. It provides access to the following resources:</p>
+<ul>
+<li><strong>Azure OpenAI</strong> - discover, deploy, and use, the latest Open AI models.</li>
+<li><strong>Management Center</strong> - streamline <em>governance</em> of your Azure AI resources.</li>
+<li><strong>AI Foundry Hub</strong> - top-level resource based on Azure ML service, for admin.</li>
+<li><strong>AI Foundry Project</strong> - child-resource for hub, with developer tools &amp; apps.</li>
+<li><strong>Connections</strong> - connect Azure AI hubs/projects to other resources (e.g., data).</li>
+</ul>
 </div>
 <div class="tabbed-block">
-<p>Explain it.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-azure-ai-resource?tabs=portal">Azure AI Hubs</a> provide the <strong>environment for a team</strong> to collaborate and organize work, and help you (as a team lead or IT admin) centrally set up security settings and govern usage and spend. Once a hub is created, developers can create projects from it, and access shared company resources without needing repeated help from IT admins.</p>
 </div>
 <div class="tabbed-block">
-<p>Explain it.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-projects?tabs=ai-studio">Azure AI Projects</a> are hosted by an Azure AI Foundry hub and used to <strong>organize your work and save state</strong> while building customized AI apps. You can create a project from an existing hub, or create it solo and have a  new hub resource automatically created for you. Projects provide a comprehensive set of tools for building, testing, tracing, and deploying, your GenAI applications with enterprise-grade security and access management support.</p>
 </div>
 <div class="tabbed-block">
-<p>Explain it.</p>
+<p><a href="https://learn.microsoft.com/azure/ai-services/what-are-ai-services">Azure AI Service</a> help developers and organizations rapidly create intelligent, cutting-edge, market-ready, and responsible applications with out-of-the-box and prebuilt and customizable APIs and models. Most services are available via <a href="https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources">REST APIs</a> and <a href="https://learn.microsoft.com/en-us/azure/ai-services/reference/sdk-package-resources?pivots=programming-language-csharp">client SDKs</a>. Example AI services include: <em>Azure OpenAI, Azure AI Search, Content Safety, Ciustom Vision, Document Intelligence, Speech, Vision, and more</em>. <strong>See: <a href="https://learn.microsoft.com/en-us/azure/ai-services/">Azure AI Services Overview</a> for options</strong>.</p>
 </div>
 <div class="tabbed-block">
-<p>Explain it.</p>
+<p><a href="https://learn.microsoft.com/azure/ai-services/openai/">Azure Open AI</a> provides REST API access to OpenAI's powerful language models including o1, o1-mini, GPT-4o, GPT-4o mini, GPT-4 Turbo with Vision, GPT-4, GPT-3.5-Turbo, and Embeddings model series. Users can access the service through its REST APIs, Python SDK, or via the Azure AI Foundry portal.</p>
 </div>
 <div class="tabbed-block">
-<p>Explain it.</p>
+<p><a href="https://learn.microsoft.com/azure/ai-studio/concepts/connections">Connections</a> in Azure AI Foundry portal are <strong>a way to authenticate and consume both Microsoft and non-Microsoft resources</strong> within your AI Foundry projects. A connection can be created exclusively per-project, or be defined at hub-level and shared across all its attached projects.</p>
+<ul>
+<li>An <em>API key connection</em> is the most common <strong>non-Microsoft</strong> connection type, and handles authentication to a target on an individual basis. </li>
+<li>A <em>custom connection</em> requires you to <strong>manage the authentication yourself</strong>, but provides. a way to securely store and access relevant credentials. </li>
+<li>A <em>data connection</em> helps access remote datastores without copying data over to your project. This also enables a <strong>commmon API across diverse data store types</strong>.</li>
+</ul>
+<p>Azure connections <strong>serve as key vault proxies</strong>, and interactions with connections are direct interactions with an Azure key vault - allowing you to store credentials, authenticate access, and consume data and information in a secure manner.</p>
 </div>
 <div class="tabbed-block">
-<p>Explain it.</p>
+<p><a href="https://learn.microsoft.com/azure/ai-studio/concepts/management-center">Management Center</a> is the component of Azure AI Foundry portal that <strong>streamlines governance and management activities</strong>. Use it as a central location to manage all your hubs, projects, resources, and settings. For instance, you can view and manage quotas, review usage metrics, assign roles, manage users, and see connected resources.</p>
 </div>
 </div>
 </div>
-<p><img alt="Azure AI Foundry Architecture" src="https://learn.microsoft.com/en-us/azure/ai-studio/media/concepts/ai-studio-architecture.png"/></p>
-<p>Now that you understand the building blocks for an Azure AI Architecture, let's walk through the steps required to create an Azure AI Agent Services solution.</p>
 <hr/>
 <h2 id="1-understand-workflow">1 Understand Workflow<a class="headerlink" href="#1-understand-workflow" title="Permanent link">¶</a></h2>
-<p>To get started with the Azure AI Agent Services, we use this workflow. In this section, we'll complete the first three steps.</p>
+<p>Now that you understand the building blocks for an Azure AI Architecture, let's walk through the steps required to create an Azure AI Agent Services solution. In this section, we'll complete the first three steps of the workflow described below:</p>
 <ol class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Create an <a href="hhttps://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-azure-ai-resource?tabs=portal">Azure AI Hub</a> resource to manage AI resources and environment.</li>
 <li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Create an <a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-projects?tabs=ai-studio">Azure AI Project</a> resource to deploy an endpoint for your app.</li>
@@ -1023,7 +1035,6 @@
 <li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Customize <a href="https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-python-azure#optional-use-your-own-resources-during-agent-setup">AI Resources Used</a> in autodeploy template (optional)</li>
 <li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Configure <a href="https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-python-azure#configure-and-run-an-agent">and run the first agent</a></li>
 </ol>
-<p><strong>In this section we'll complete steps 1-3</strong> and simplify this workflow where possible.</p>
 <hr/>
 <h3 id="11-update-azure-subscription">1.1 Update Azure Subscription<a class="headerlink" href="#11-update-azure-subscription" title="Permanent link">¶</a></h3>
 <h3 id="12-create-azure-ai-project">1.2 Create Azure AI Project<a class="headerlink" href="#12-create-azure-ai-project" title="Permanent link">¶</a></h3>
@@ -1070,7 +1081,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../02/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.2 Some Fundamentals">
+          <a href="../02/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.2 AI Fundamentals">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1080,7 +1091,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                1.2 Some Fundamentals
+                1.2 AI Fundamentals
               </div>
             </div>
           </a>
