@@ -17,15 +17,15 @@
 # ---------------------------------
 
 # Project information .........................................
-site_name: "Nitya Learns: Azure AI Agents"
-site_url: https://nitya.github.io/learns-azure-ai-agents
+site_name: "Nitya Learns: AI Agents"
+site_url: https://nitya.github.io/learns-ai-agents
 site_author: Nitya Narasimhan, PhD
 site_description: >-
  Codespaces & Copilot enabled sandbox for exploring Agent technologies on Azure AI.
 
 # Repository ..................................................
-repo_name: nitya/learns-azure-ai-agents
-repo_url: https://github.com/nitya/learns-azure-ai-agents
+repo_name: nitya/learns-ai-agents
+repo_url: https://github.com/nitya/learns-ai-agents
 
 # Copyright ...................................................
 copyright: >
